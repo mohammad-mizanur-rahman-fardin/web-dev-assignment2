@@ -5,8 +5,218 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>faugei</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!--Noto Serif Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Inter Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+        .noto-serif{
+            font-family: "Noto Serif", serif;
+        }
+    </style>
 </head>
-<body>
-    <h3 class="">this is a header 3</h3>
+<body class="bg-[rgb(245,248,255)]">
+    <header>
+        <nav class="flex justify-between items-center sm:w-[1140px] sm:h-[71px] sm:mt-[30px] mt-[54px] sm:mr-[150px] sm:ml-[150px] mr-[16px] ml-[16px]">
+            <!-- logo -->
+            <div class="">
+                <img class="w-[63px] h-[38px] sm:w-[135px] sm:h-[82px]" src="assets\logo.png" alt="faugei-logo">
+            </div>
+    
+            <!--right sided items-->
+            <div class="">
+                <ul class="flex gap-12">
+                    <li class="hidden font-[Inter] font-bold sm:block"><a href="#">Home</a></li>
+                    <li class="hidden font-[Inter] text-[rgb(137,135,161)] sm:block"><a href="#">Shop</a></li>
+                    <li class="hidden font-[Inter] text-[rgb(137,135,161)] sm:block"><a href="#">About us</a></li>
+                    <li class="flex font-[Inter]"><a href="#"><img class="w-[24px] h-[24px]" src="assets\online-shopping.png" alt="cart-icon"></a> <span class="ml-2.5">Cart ($56)</span></li>
+                </ul>
+            </div>
+        </nav>
+        <!--hero section-->
+        <section class="flex sm:flex-row flex-col-reverse justify-between items-end sm:w-[1140px] sm:h-[351px] sm:ml-[150px] sm:mr-[150px] sm:mt-[230px] mt-[28px] mx-4">
+            <div class="sm:w-[570px]">
+                <h2 class="font-bold noto-serif text-[24px] ml-3 sm:text-[65px] sm:mt-[55px] sm:leading-[90px] sm:w-full w-[191px] mt-7"><span>ALWAYS</span> <span class="text-[rgb(233,90,8)]">FRESH FLOWERS</span></h2>
+                <p class="font-[Inter] sm:text-[22px] text-[14px] mx-4 text-[rgb(122,124,128)] mt-[13px]">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+            </div>
+            <div>
+                <img src="assets\hero-flower.png" alt="hero-flower" class="sm:w-[570px] sm:h-[355px]">
+            </div>
+        </section>
+    </header>
+    
+    <main>
+        <!--plant section-->
+        <section class="sm:w-[1140px] sm:h-[1186.88px] sm:mx-[150px] sm:mt-[120px] mt-[65px] mx-[16px]">
+            <h3 class="font-bold noto-serif text-[24px] sm:text-[50px] text-center"><span class="text-[rgb(233,90,8)]">Our</span> <span>Plants</span></h3>
+            <p class="text-center font-[Inter] sm:text-[22px] text-[14px] text-[rgb(122,124,128)] mt-[16px] leading-[27px] w-[336px] sm:mb-[4px] mb-[8px] sm:w-[888px] sm:mx-[126px] mx-[28px]">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+            <div class="grid sm:grid-cols-4 grid-cols-2 sm:gap-[25px] gap-[20px]">
+                <!--card 1-->
+                <div class="sm:w-[270px] sm:h-[484px] w-[171px] h-[340px] mt-[45px]">
+                    <img src="assets\sample-flower-image.png" alt="flower-image">
+                    <p class="text-[rgb(17,17,17)] font-semibold font-[Inter] sm:text-[22px] text-[16px] mt-[23px] sm:mb-[8px] mb-[3px] sm:mx-[65px] mx-[35px] text-center">Lily Blossom</p>
+                    <p class="text-[rgb(17,17,17)] font-bold font-[Inter] sm:text-[22px] text-[16px] mb-[23px] sm:mx-[69px] mx-[37px] text-center">20 USD</p>
+                    <a href="#"><button class="bg-[rgb(233,90,8)] text-white w-full font-[Inter] text-[16px] font-medium sm:pt-[13px] sm:pb-[13px] sm:px-[80px]">ADD TO CART</button></a>
+                </div>
+
+                <!--card 2-->
+                <div class="sm:w-[270px] sm:h-[484px] w-[171px] h-[340px] mt-[45px]">
+                    <img src="assets\sample-flower-image.png" alt="flower-image">
+                    <p class="text-[rgb(17,17,17)] font-semibold font-[Inter] sm:text-[22px] text-[16px] mt-[23px] sm:mb-[8px] mb-[3px] sm:mx-[65px] mx-[35px] text-center">Lily Blossom</p>
+                    <p class="text-[rgb(17,17,17)] font-bold font-[Inter] sm:text-[22px] text-[16px] mb-[23px] sm:mx-[69px] mx-[37px] text-center">20 USD</p>
+                    <a href="#"><button class="bg-[rgb(233,90,8)] text-white font-[Inter] w-full text-[16px] font-medium sm:pt-[13px] sm:pb-[13px] sm:px-[80px]">ADD TO CART</button></a>
+                </div>
+
+                <!--card 3-->
+                <div class="sm:w-[270px] sm:h-[484px] w-[171px] h-[340px] mt-[45px]">
+                    <img src="assets\sample-flower-image.png" alt="flower-image">
+                    <p class="text-[rgb(17,17,17)] font-semibold font-[Inter] sm:text-[22px] text-[16px] mt-[23px] sm:mb-[8px] mb-[3px] sm:mx-[65px] mx-[35px] text-center">Lily Blossom</p>
+                    <p class="text-[rgb(17,17,17)] font-bold font-[Inter] sm:text-[22px] text-[16px] mb-[23px] sm:mx-[69px] mx-[37px] text-center">20 USD</p>
+                    <a href="#"><button class="bg-[rgb(233,90,8)] text-white font-[Inter] w-full text-[16px] font-medium sm:pt-[13px] sm:pb-[13px] sm:px-[80px]">ADD TO CART</button></a>
+                </div>
+
+                <!--card 4-->
+                <div class="sm:w-[270px] sm:h-[484px] w-[171px] h-[340px] mt-[45px]">
+                    <img src="assets\sample-flower-image.png" alt="flower-image">
+                    <p class="text-[rgb(17,17,17)] font-semibold font-[Inter] sm:text-[22px] text-[16px] mt-[23px] sm:mb-[8px] mb-[3px] sm:mx-[65px] mx-[35px] text-center">Lily Blossom</p>
+                    <p class="text-[rgb(17,17,17)] font-bold font-[Inter] sm:text-[22px] text-[16px] mb-[23px] sm:mx-[69px] mx-[37px] text-center">20 USD</p>
+                    <a href="#"><button class="bg-[rgb(233,90,8)] text-white font-[Inter] w-full text-[16px] font-medium sm:pt-[13px] sm:pb-[13px] sm:px-[80px]">ADD TO CART</button></a>
+                </div>
+
+                <!--card 5-->
+                <div class="sm:w-[270px] sm:h-[484px] w-[171px] h-[340px] mt-[17px]">
+                    <img src="assets\sample-flower-image.png" alt="flower-image">
+                    <p class="text-[rgb(17,17,17)] font-semibold font-[Inter] sm:text-[22px] text-[16px] mt-[23px] sm:mb-[8px] mb-[3px] sm:mx-[65px] mx-[35px] text-center">Lily Blossom</p>
+                    <p class="text-[rgb(17,17,17)] font-bold font-[Inter] sm:text-[22px] text-[16px] mb-[23px] sm:mx-[69px] mx-[37px] text-center">20 USD</p>
+                    <a href="#"><button class="bg-[rgb(233,90,8)] text-white font-[Inter] w-full text-[16px] font-medium sm:pt-[13px] sm:pb-[13px] sm:px-[80px]">ADD TO CART</button></a>
+                </div>
+
+                <!--card 6-->
+                <div class="sm:w-[270px] sm:h-[484px] w-[171px] h-[340px] mt-[17px]">
+                    <img src="assets\sample-flower-image.png" alt="flower-image">
+                    <p class="text-[rgb(17,17,17)] font-semibold font-[Inter] sm:text-[22px] text-[16px] mt-[23px] sm:mb-[8px] mb-[3px] sm:mx-[65px] mx-[35px] text-center">Lily Blossom</p>
+                    <p class="text-[rgb(17,17,17)] font-bold font-[Inter] sm:text-[22px] text-[16px] mb-[23px] sm:mx-[69px] mx-[37px] text-center">20 USD</p>
+                    <a href="#"><button class="bg-[rgb(233,90,8)] text-white font-[Inter] w-full text-[16px] font-medium sm:pt-[13px] sm:pb-[13px] sm:px-[80px]">ADD TO CART</button></a>
+                </div>
+
+                <!--card 7-->
+                <div class="sm:w-[270px] sm:h-[484px] w-[171px] h-[340px] mt-[17px]">
+                    <img src="assets\sample-flower-image.png" alt="flower-image">
+                    <p class="text-[rgb(17,17,17)] font-semibold font-[Inter] sm:text-[22px] text-[16px] mt-[23px] sm:mb-[8px] mb-[3px] sm:mx-[65px] mx-[35px] text-center">Lily Blossom</p>
+                    <p class="text-[rgb(17,17,17)] font-bold font-[Inter] sm:text-[22px] text-[16px] mb-[23px] sm:mx-[69px] mx-[37px] text-center">20 USD</p>
+                    <a href="#"><button class="bg-[rgb(233,90,8)] text-white font-[Inter] w-full text-[16px] font-medium sm:pt-[13px] sm:pb-[13px] sm:px-[80px]">ADD TO CART</button></a>
+                </div>
+
+                <!--card 8-->
+                <div class="sm:w-[270px] sm:h-[484px] w-[171px] h-[340px] mt-[17px]">
+                    <img src="assets\sample-flower-image.png" alt="flower-image">
+                    <p class="text-[rgb(17,17,17)] font-semibold font-[Inter] sm:text-[22px] text-[16px] mt-[23px] sm:mb-[8px] mb-[3px] sm:mx-[65px] mx-[35px] text-center">Lily Blossom</p>
+                    <p class="text-[rgb(17,17,17)] font-bold font-[Inter] sm:text-[22px] text-[16px] mb-[23px] sm:mx-[69px] mx-[37px] text-center">20 USD</p>
+                    <a href="#"><button class="bg-[rgb(233,90,8)] text-white font-[Inter] w-full text-[16px] font-medium sm:pt-[13px] sm:pb-[13px] sm:px-[80px]">ADD TO CART</button></a>
+                </div>
+            </div>
+        </section>
+
+        <!--lover section-->
+        <section class="sm:mt-[210px] mt-[41px] sm:w-[1140px] sm:ml-[150px] sm:mr-[150px] ml-[17px] mr-[15px]">
+            <div class="sm:flex sm:gap-[60px]">
+                <div class="relative sm:w-[540px] sm:h-[597px] w-[358px] h-[396px]">
+                    <img src="assets\flower-store.png" alt="flower-store" class="w-full h-full ml-3 object-cover">
+                    <img src="assets\trusted-badge.png" alt="trust-badge" class="hidden sm:block absolute w-[286px] h-[286px] top-[-126px] left-[345px]">
+                </div>
+                <div class="sm:w-[540px] sm:h-[521px] sm:mt-[38px] sm:mb-[38px] mt-[18px]">
+                    <h3 class="font-bold sm:text-[50px] text-[24px] sm:w-[540px] sm:h-[137px] w-[270px] h-[33px] noto-serif"><span>Flower & Plants</span> <span>Lover</span></h3>
+                    <ul class="sm:ml-9 ml-6 mr-5 sm:text-[22px] text-[16px] font-[Inter] text-[rgb(122,124,128)] list-disc tracking-tighter">
+                        <li class="sm:mt-[20px] mt-[16px] leading-[28px]">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+                        <li class="sm:mt-[20px] mt-[16px] leading-[28px]">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+                        <li class="sm:mt-[20px] mt-[16px] leading-[28px]">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--deals section-->
+        <section class="sm:mt-[133px] mt-[143px] sm:w-[1140px] sm:mx-[150px] mx-4">
+          <h3 class="font-bold noto-serif text-[24px] sm:text-[50px] text-center"><span class="text-[rgb(233,90,8)]">Latest</span> <span>Deals</span></h3>
+          <p class="sm:text-[22px] mt-[16px] text-[16px] font-[Inter] text-[rgb(122,124,128)] sm:w-[888px] w-[336px] text-center mx-auto">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+      
+          <div class="grid grid-cols-1 sm:grid-cols-10 gap-5 mt-10 sm:h-[400px] h-auto sm:mt-[100px]">
+            <!--left column-->
+            <div class="grid grid-rows-2 gap-5 sm:col-span-3 h-auto sm:h-full">
+              <div class="relative rounded-[14px] overflow-hidden">
+                <img src="assets/deal-bloom.png" alt="deal-bloom" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-white px-3 text-center">
+                  <h4 class="text-[20px] font-bold noto-serif">60% Off | Bloom Plant</h4>
+                  <a href="#" class="underline mt-2 font-[Inter] text-[16px] font-semibold">Shop Now</a>
+                </div>
+              </div>
+              <div class="relative sm:rounded-[14px] overflow-hidden">
+                <img src="assets/deal-ana.png" alt="deal-ana" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-white px-3 text-center">
+                  <h4 class="text-[20px] font-bold noto-serif">30% Off | Ana Plant</h4>
+                  <a href="#" class="underline mt-2 font-[Inter] text-[16px] font-semibold">Shop Now</a>
+                </div>
+              </div>
+            </div>
+        
+            <!--right column-->
+            <div class="relative sm:col-span-7 h-full sm:rounded-[22px] rounded-[14px] overflow-hidden">
+              <img src="assets/deal-zabo.png" alt="deal-zabo" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-white px-6 text-center">
+                <h4 class="sm:text-[40px] text-[20px] font-bold noto-serif">25% Off | Zabo Plant</h4>
+                <a href="#" class="underline mt-2 font-[Inter] text-[28px] font-semibold">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--newsletter section-->
+        <section class="sm:mt-[120px] mt-[40px]">
+            <div class="relative sm:h-[533px] h-[276px]">
+
+                <img src="assets/news-letter-bg.png" alt="news-letter" class="w-full h-full object-cover">
+            
+                <div class="absolute inset-0 flex flex-col justify-center items-center px-4 text-center bg-transparent">
+                    <h2 class="font-bold noto-serif sm:text-[50px] text-[20px] text-white mb-[23px]">Join the colorful Bunch</h2>
+                
+                    <div class="flex">
+                        <input type="email" placeholder="Write email" class="flex-1 sm:w-[644px] w-[218px] h-[50px] font-[Inter] bg-white p-3 text-black"/>
+                        <button class="bg-[rgb(233,90,8)] text-[16px] font-semibold text-white h-[50px] sm:w-[186px] w-[103px] font-[Inter] py-[15px] sm:px-[53px] px-[12px]">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="sm:flex sm:justify-between sm:items-start sm:w-[1120px] sm:h-[348px] bg-[rgb(250,252,255)] sm:mx-[160px] ml-5 mr-3.5">
+            <div class="w-[359px] sm:h-[179px] h-[173px] mt-[50px]">
+                <img src="assets\logo.png" alt="faugei-logo" class="w-[180px] h-[109px] sm:w-[135px] sm:h-[82px] mb-[16px]">
+                <p class="text-[rgb(125,126,128)] font-[Inter] sm:text-[22px] text-[16px] text-left leading-[27px]">Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
+            </div>
+            <div class="text-[rgb(107,114,128)] font-[Inter] text-md sm:mt-[50px] mt-5 grid sm:grid-cols-2 grid-cols-1 gap-y-8 sm:gap-x-[67px]">
+                <a href="#">Home</a>
+                <a href="#">Features</a>
+                <a href="#">About Us</a>
+                <a href="#">Pricing</a>
+                <a href="#">Blog</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">FAQ</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Help Center</a>
+            </div>
+            <div class="w-[216px] h-[36px] flex justify-between items-center sm:mt-[50px] mt-5 gap-6  mb-[50px]">
+                <img src="assets\icon-linkedin.png" alt="icon-linkedin">
+                <img src="assets\icon-twitter.png" alt="icon-twitter">
+                <img src="assets\icon-facebook.png" alt="icon-facebook">
+                <img src="assets\icon-youtube.png" alt="icon-youtube">
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
